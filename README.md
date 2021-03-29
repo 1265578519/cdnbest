@@ -107,7 +107,7 @@ linux安装
 
 安装命令：（复制下面命令到服务器上运行）
 ```
-yum -y install wget;wget --no-check-certificate https://console.cdnbest.com/system/install/1063/4.7.25 -O cb.sh;sh ./cb.sh 1063
+yum -y install wget;wget --no-check-certificate https://console.cdnbest.com/system/install/10086/4.7.25 -O cb.sh;sh ./cb.sh 10086
 ```
 windows下载
 
