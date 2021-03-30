@@ -63,8 +63,9 @@ mysqldump -u root cdnbest > cdnbest.sql
 
 压缩下在下载传输，节省时间
 ```
-yum -y install xz lrzsz
-tar -Jcvf cdnbest.sql.tar.xz cdnbest.sql
+yum -y install tar gzip lrzsz
+tar -zcvf cdnbest.sql.tar.gz cdnbest.sql
+sz cdnbest.sql.tar.gz
 ```
 
 导出数据，导出后下载到本地
