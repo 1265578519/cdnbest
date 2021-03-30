@@ -61,6 +61,11 @@ cd /tmp && wget http://download.cdnbest.com/cdnbest/download_master.sh -O im.sh 
 mysqldump -u root cdnbest > cdnbest.sql
 ```
 
+压缩下在下载传输，节省时间
+```
+yum -y install xz lrzsz
+tar -Jcvf cdnbest.sql.tar.xz cdnbest.sql
+```
 
 导出数据，导出后下载到本地
 
@@ -75,8 +80,15 @@ cp -a /vhs2 /vhs2_backup
 3.建议定时备份您的数据库.
 
 
+如需迁移服务器导入恢复sql文件则运行：
+```
+mysql -u root cdnbest < cdnbest.sql
+```
+
 推荐本地主控服务器购买优惠注册
-https://cloud.tencent.com/act/cps/redirect?redirect=30206&cps_key=e13a24941d2ca9b7a8079c76a22d1bf5
+主推阿里云稳定安全：https://www.aliyun.com/product/swas?userCode=kj5ig4dp
+腾讯云便宜实惠：https://cloud.tencent.com/act/cps/redirect?redirect=30206&cps_key=e13a24941d2ca9b7a8079c76a22d1bf5
+
 
 数据运行一段时间正常了根据个人自身需求可以降级成稳定版，取消界面显示的数据导入功能，升级后点击DNS修复一下，同步下DNS数据（4.7.25是开发版，不支持DNS同步，所以点修复没有用，要升级到4.6.16稳定版即可同步解析数据）
 ```
