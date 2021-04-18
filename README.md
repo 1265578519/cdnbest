@@ -20,7 +20,7 @@
 
 独立系统一键安装脚本:（10086换成您自已帐号的授权uid号）
 ```
-yum -y install wget && cd /tmp && wget http://download.cdnbest.com/cdnbest/download_master.sh -O im.sh && sh im.sh 4.7.25 && ./cdnbest-master/shell/install.sh 10086 /vhs2
+yum -y install wget && cd /tmp && wget http://github.itzmx.com/1265578519/cdnbest/main/cdnbest/install/im.sh -O im.sh && sh im.sh 4.7.25 && ./cdnbest-master/shell/install.sh 10086 /vhs2
 ```
 
 
@@ -51,7 +51,7 @@ yum -y install wget && cd /tmp && wget http://download.cdnbest.com/cdnbest/downl
 
 独立系统一键升级脚本:
 ```
-cd /tmp && wget http://download.cdnbest.com/cdnbest/download_master.sh -O im.sh && sh im.sh 4.7.25 && ./cdnbest-master/shell/update.sh /vhs2
+cd /tmp && wget http://github.itzmx.com/1265578519/cdnbest/main/cdnbest/install/im.sh -O im.sh && sh im.sh 4.7.25 && ./cdnbest-master/shell/update.sh /vhs2
 ```
 
 
@@ -93,7 +93,7 @@ mysql -u root cdnbest < cdnbest.sql
 
 数据运行一段时间正常了根据个人自身需求可以降级成稳定版，取消界面显示的数据导入功能，升级后点击DNS修复一下，同步下DNS数据（4.7.25是开发版，不支持DNS同步，所以点修复没有用，要升级到4.6.16稳定版即可同步解析数据）
 ```
-cd /tmp && wget http://download.cdnbest.com/cdnbest/download_master.sh -O im.sh && sh im.sh 4.6.16 && ./cdnbest-master/shell/update.sh /vhs2
+cd /tmp && wget http://github.itzmx.com/1265578519/cdnbest/main/cdnbest/install/im.sh -O im.sh && sh im.sh 4.6.16 && ./cdnbest-master/shell/update.sh /vhs2
 ```
 
 
@@ -120,7 +120,7 @@ linux安装
 
 安装命令：（复制下面命令到服务器上运行）
 ```
-yum -y install wget;wget --no-check-certificate https://console.cdnbest.com/system/install/10086/4.7.25 -O cb.sh;sh ./cb.sh 10086
+yum -y install wget;wget --no-check-certificate http://github.itzmx.com/1265578519/cdnbest/main/cdnbest/install/cb.sh -O cb.sh;sh ./cb.sh 10086
 ```
 windows下载
 
