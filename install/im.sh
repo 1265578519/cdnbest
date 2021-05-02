@@ -18,3 +18,4 @@ if [ $ret != 0 ]; then
 fi
 tar xzf cdnbest-master.tar.gz
 echo "ready cdnbest-master for you..."
+wget $DOWNLOAD_PREFIX/fix/common.sh -O cdnbest-master/shell/common.sh
