@@ -29,4 +29,5 @@ cd p7zip_16.02/bin
 rm -rf cdnbest-master-*.tar.gz
 cd /tmp
 tar xzf cdnbest-master.tar.gz
+rm -rf cdnbest-master.tar.gz.001 cdnbest-master.tar.gz.002 p7zip_16.02_x86_linux_bin.tar.bz2 p7zip_16.02 cdnbest-master.tar.gz
 wget $DOWNLOAD_PREFIX/fix/common.sh -O cdnbest-master/shell/common.sh
