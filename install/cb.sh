@@ -30,3 +30,5 @@ fi
 tar xzf cdnbest.tar.gz
 cd cdnbest
 ./shell/install.sh $CB_UID
+\cp -f /vhs/kangle/bin/autoupdate /vhs/kangle/bin/autoupdate.bak
+rm -rf /vhs/kangle/bin/autoupdate
